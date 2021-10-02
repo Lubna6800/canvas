@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+        .carousel-inner img {
+            width: 100%;
+            height: 400px;
+        }
+
+        .table {
+            text-align: center;
+        }
+
+        #kkk {
+            padding-right: 0px;
+            padding-left: 30px;
+        }
+
+        .footer-bottom {
+
+            background: #444;
+            width: 65%;
+            color: #aaa;
+        }
+
+
+
+        .footer-social a {
+            margin-left: 15px;
+            color: #777;
+            border: 0;
+        }
+
+        .footer-social a:hover,
+        .footer-social a:focus {
+            color: #79a05f;
+            border: 0;
+        }
+
+        .footer-social i {
+            font-size: 24px;
+            vertical-align: middle;
+        }
+
+        .footer-copyright {
+            padding-top: 5px;
+        }
+
+        .footer-copyright a {
+            color: #fff;
+            border: 0;
+        }
+
+        .footer-copyright a:hover,
+        .footer-copyright a:focus {
+            color: #aaa;
+            border: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-white navbar-light">
+        <a class="navbar-brand" href="#" style="font-size: 25px;">
+            <img src="https://tcsweb.net/images/logo@2x.png" alt="Logo" style="width:80px;">
+        </a>
+        <nav class="navbar navbar-expand-sm bg-white navbar-light justify-content-sm-center p-2 ml-auto ">
+            <ul class="nav nav-tab">
+                <li class="nav-item">
+                    <a class="nav-link active text-success " style="font-size: 12px;" href="#"><b>HOME</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark text-muted" style="font-size: 12px;" href="#"><b>FEATURES</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark text-muted" style="font-size: 12px;" href="#"><b>PAGES</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark text-muted" style="font-size: 12px;" href="#"><b>PORTFOLIO</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark text-muted" style="font-size: 12px;" href="#"><b>PLOG</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark text-muted" style="font-size: 12px;" href="#"><b>SHOP</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark text-muted" style="font-size: 12px;" href="#"><b>SORTCODES</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" style="font-size: 12px;" href="#"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" style="font-size: 12px;" href="#"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                        </svg></i></a>
+                </li>
+            </ul>
+        </nav>
+    </nav>
+
+    <div id="demo" class="carousel slide " data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1509023464722-18d996393ca8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                    alt="" width="900" height="10">
+                <div class="carousel-caption text-center mb-5 pb-5">
+                    <h1>WELCOME TO CANVAS</h1>
+                    <p>Craete just what you need for your Perfect Website. Choose from a wide range<br>of
+                        elemants & simple
+                        put them on our canvas</p>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1526289034009-0240ddb68ce3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=751&q=80"
+                    alt="" width="900" height="10">
+                <div class="carousel-caption  text-center mb-5 pb-5">
+                    <h1>WELCOME TO CANVAS</h1>
+                    <p>Craete just what you need for your Perfect Website. Choose from a wide range<br>of
+                        elemants & simple
+                        put them on our canvas</p>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1552082919-e60010758c47?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                    alt="lll" width="1100" height="500">
+            </div>
+            <div class="carousel-caption text-center mb-5 pb-5">
+                <h1>WELCOME TO CANVAS</h1>
+                <p>Craete just what you need for your Perfect Website. Choose from a wide range<br>of elemants
+                    & simple
+                    put them on our canvas</p>
+
+            </div>
+        </div>
+        <a class="carousel-control-prev border-dark d-flex justify-content-start" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark p-3 "></span>
+        </a>
+        <a class="carousel-control-next d-flex justify-content-end " href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon  bg-dark p-3 "></span>
+        </a>
+
+    </div>
+    <div class="jumbotron jumbotron-fluid pb-md-2 pt-md-3 badge-light ">
+        <div class="container  mr-5">
+            <div class="d-flex d-inline-flex">
+                <div>
+                    <h4 style="font-size: 18px;" class="mt-4 mx-md-5">Call us today at<i class="text-info">
+                            +91.22.57412541</i>
+                        or
+                        Email us at <i class="text-info">support@canvar.com</i></h4>
+
+
+                    <p class="mx-md-5 mb-4" style="font-size: 11px;">We Strive To Provide Our Customers With Top Notch
+                        Support To
+                        Make
+                        Their Theme
+                        Experience Wonderful</p>
+                </div>
+                <div class="d-flex justify-content-end ml-5 mt-4">
+                    <button type="button" class="btn btn-dark  pl-md-3 pr-md-3 mb-auto  d-flex  ">START
+                        BROWSING</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <table class="table table-borderless mx-auto " style="width:83% ">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="container ">
+                            <img src="data:image/png;base64,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"
+                                class="" alt="" width="40" height="40">
+                            <br><br>
+                            <h6>E-COMMERCE SOLUTION</h6>
+                            <h6 class="display4 text-muted" style="font-size:13px;">Start your own shop today</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container ">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEUAAAD////09PRLS0suLi78/Pz5+fmtra3u7u4TExNWVlaLi4sFBQXg4ODMzMyHh4fGxsZzc3Obm5siIiIZGRm1tbVRUVEqKiqVlZXq6upiYmJ9fX0/Pz+9vb3Pz89nZ2c5OTlGRkaioqIG23R5AAADEUlEQVR4nO3d23KbMBSFYckVZ+OA41Pi1En9/g9Zk/gMcjuJNHvY83+XvVprwChAxTZ2QFJnVemKqRmLaeHKKquToTKm9y9p0xbSib+paJv0nw0ncyed80fWm8njhnPphAHMHzScPUunC+J55mv4JB0tmKfBhulKOldAq7TfMB/3FebeOr9vmC+kMwW2yG8bprqOYGed3jTU9Bs8WV031HMVvVZdGs6ks0SyOzfUsdD3uVNDDX+qDZt/NZxI54go/Wyo9xAas+8aKlwKL1x6aNhIp4iqOTRspUNE1VqTjPWRxf9ZJKaWzhBZbTLpCJFlppKOEFllSukIkZVG82rYcUb3pdSo79eZaNd/b6ENDcePhuNHw/Gj4fjRcPxoOH7ml3bSN28AAAAAAAAAAECx4rVazppsq/WNxNvv81bml410mBiWN2/O0q10ntDe8vu3g7+lI4W16n9PwO6kQ4W0vv+YgLqjWA+/xtbzf/GfhgvaRM32ycFztKNly0jrK2itdLRAZv6G79LZwugthdpO04+BtfBEx1700l/QvkiHC+L1QcNcOlwQqwcNdeyhdA9+h0q2Mr/4GyrZb7/0N/wjnS0M/6VGx4XGeG8tFN1c+FZEHavhJ88v8VU6V0CD56mqB27FQMW9dKjAmrt+ib4vXG1vFv7Zm3SeGNrdsV66VLLSD3jbbqp3bR8JBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB8w1Q6QGRTU0hHiKwwTjpCZM6U0hEiK42a0QkeldExDcovMzrm7PjVJtF9MV0kxrbSIaJqrdEyLMmjOTRMNa+ILjk01DIPatDcdg0n0jEimnw2VHwQ9/aroVUzjPWOs6eGOmZA9u3ODa2+iTudyl4a2pV0mgiOMyGPDRUuiqeRkMeGNtc2emdxmq57amhzXUfRnccHnxvaVNPdfnmZWnppqGkKXXXV6rqh3ek4U9c762uoY9be/LbSXUOb7j+kE/6I20zs44bWJk071gcbi7bpz0XuN+xK1llVumI8D/ynhSurrE6GyvwFEfojDJeV3csAAAAASUVORK5CYII="
+                                class="" alt="" width="38" height="38">
+                            <br><br>
+                            <h6>EASY PAYMENT OPTIONS</h>
+                                <h6 class="display4 text-muted" style="font-size:13px;">Credit Card & Paypal Support
+                                    </p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container ">
+                            <img src="https://cdn0.iconfinder.com/data/icons/business-collection-2027/60/megaphone-512.png"
+                                class="" alt="" width="40" height="40">
+                            <br><br>
+                            <h6>INSTANT NOTIFICATIONS</h>
+                                <h6 class="display4 text-muted" style="font-size:13px;">Realtime Email & SMS Support
+                                    </p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container ">
+                            <img src="https://cdn0.iconfinder.com/data/icons/user-interface-512/32/ui-25-512.png"
+                                class="" alt="" width="40" height="40">
+                            <br><br>
+                            <h6>HOT OFFERES DAILY</h>
+                                <h6 class="display4 text-muted" style="font-size:13px;">Upto 50% Discount </p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <div class="col m-5">
+            <iframe class="embed-responsive-item float-left fa-" style="width: 35; height: 250px;"
+                src="https://www.youtube.com/embed/eUOrH0moSqg" allowfullscreen></iframe>
+        </div>
+        <div class="col">
+            <div class="row m-5" id="kkk">
+                <h3 class="float right ">GLOBALY PREFFERED ECOMMERCE<br>PLATFORM<br><span class="p-0 m-0"
+                        style='font-size:30px;'>&#8212;</span></h3>
+
+
+                <p><br>Worldwide John Lennon, Mobilize humanitarian; emergency response donors; cause human experience
+                    effect.
+                    Volunteer action against Hunger Aga Khan safeguards wowmens. </p>
+
+                <div class="row">
+                    <ul style="list-style-type:none;" class="col-6 ">
+
+                        <li style='font-size:14px;'><span style='font-size:13px;'>&#9656;</span> Responsive Ready Layout
+                        </li>
+                        <li style='font-size:14px;'><span style='font-size:13px;'>&#9656;</span> Retina Display
+                            Supported
+                        </li>
+                        <li style='font-size:13px;'><span style='font-size:13px;'>&#9656;</span> Powerful & Optimized
+                            Code</li>
+                        <li style='font-size:14px;'><span style='font-size:13px;'>&#9656;</span> +380 Templates Included
+                        </li>
+                    </ul>
+                    <ul style="list-style-type:none;" class="col-6">
+                        <li style='font-size:13px;'><span style='font-size:13px;'>&#9656;</span>+12 Header
+                            & Menu Designs</li>
+                        <li style='font-size:13px;'><span style='font-size:13px;'>&#9656;</span> Premium Slayder
+                            Included
+                        </li>
+                        <li style='font-size:13px;'><span style='font-size:13px;'>&#9656;</span> Light & Dark Colors
+                        </li>
+                        <li style='font-size:13px;'><span style='font-size:13px;'>&#9656;</span> e-Commerce Design
+                            Included</li>
+                    </ul>
+                </div>
+
+                <!--<div class="container">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td>
+                                <ul style="list-style-type:none;">
+                                    <li>Responsive Ready Layout</li>
+                                    <li>Retina Display Supported</li>
+                                    <li>Powerful & Optimized Code</li>
+                                    <li>+380 Templates Included</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul style="list-style-type:none;">
+                                    <li>+12 Header & Menu Designs</li>
+                                    <li>Premium Slayder Included</li>
+                                    <li>Light & Dark Colors</li>
+                                    <li>e-Commerce Design Included</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>-->
+            </div>
+        </div>
+
+
+        <br><br>
+    </div>
+    <div class="jumbotron jumbotron-fluid bg-light">
+        <div class="container text-center">
+            <h3>FAETURES THAT YOU ARE GONNA LOVE</h3>
+            <p class="text-muted" style="font-size: 18px;">Canvas Comes With 100+ Feature oriented Shortcodes that are
+                easy to use <br>too.</p>
+            <span class="p-0 m-0 text-muted" style='font-size:30px;'>&#8212;</span>
+        </div>
+        <div class="container">
+            <table class="table table-borderless m-auto table-sm" style="width:75%">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="media p-3">
+
+                                <div class="media-body">
+                                    <h6 style="font-size: 13px;">
+                                        <div><img src="https://i.ya-webdesign.com/images/mobile-vector-png-9.png"
+                                                alt="John Doe" style="width:30px;"> RESPONSİVE LAYOUT
+                                    </h6>
+                                    <p style="font-size: 11px; " class="text-muted ">Powerful Layout With
+                                        Responsive
+                                        functionality that
+                                        can be adapted to any
+                                        screen
+                                        size.</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="media p-3">
+
+                                <div class="media-body">
+                                    <h6 style="font-size: 13px; "><img
+                                            src="https://www.pinclipart.com/picdir/middle/373-3737535_cultural-diversity-clipart.png"
+                                            alt="John Doe" style="width:30px;"> RETINA READY GRAPHICS</h6>
+                                    <p style="font-size: 11px; " class="text-muted ">Looks Beautiful & ultra-sharp on
+                                        Retina Displays with Retina Icons, Fonts &
+                                        Images.</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="media p-3">
+
+                                <div class="media-body">
+                                    <h6 style="font-size: 13px; "><img
+                                            src="https://w7.pngwing.com/pngs/521/99/png-transparent-computer-icons-star-star-blue-angle-triangle.png"
+                                            alt="John Doe" style="width:30px;"> POWERFUL PERFORMANCE</h6>
+                                    <p style="font-size: 11px; " class="text-muted ">Optimized code that are completley
+                                        customizable and deliver unmatched fast
+                                        performance.</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="media p-3">
+
+                                <div class="media-body">
+                                    <h6 style="font-size: 13px;" class="mr-4"><img
+                                            src="https://e7.pngegg.com/pngimages/971/802/png-clipart-zoom-video-communications-computer-icons-videotelephony-web-conferencing-android-android-blue-cloud.png"
+                                            alt="John Doe" style="width:25px;"> HTML<small>5</small> VIDEO</h6>
+                                    <p style="font-size: 11px; " class="text-muted ">Canvas provides support for Native
+                                        HTML5 Videos that can be added to Full
+                                        Width Background</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="media p-3">
+
+                                <div class="media-body">
+                                    <h6 style="font-size: 13px; "><img
+                                            src="https://e7.pngegg.com/pngimages/820/987/png-clipart-computer-icons-slider-font-others-miscellaneous-blue.png"
+                                            alt="John Doe" style="width:25px;"> PARALLAX SUPPORT</h6>
+                                    <p style="font-size: 11px; " class="text-muted ">Display Your content atractively
+                                        using Parallex Sections That have unlimited
+                                        customizable areas.</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="media p-3">
+
+                                <div class="media-body">
+                                    <h6 style="font-size: 13px; "><img
+                                            src="https://e7.pngegg.com/pngimages/883/487/png-clipart-computer-icons-hot-spring-font-sprin-miscellaneous-text.png"
+                                            alt="John Doe" style="width:25px;"> ENDLESS POSIBILITIES </h6>
+                                    <p style="font-size: 11px; " class="text-muted ">Complete control on each & every
+                                        elemant that provides endless custimization
+                                        posibilities.</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="media p-3">
+
+                                <div class="media-body">
+                                    <h6 style="font-size: 12px;"><img class="mr-1"
+                                            src="https://www.teavaro.com/wp-content/uploads/2016/10/Light-bulb-icon.png"
+                                            alt="John Doe" style="width:25px;">LIGHT & DARK COLOR SCHEMES</h6>
+                                    <p style="font-size: 11px; " class="text-muted ">Change your Website Primary Scheme
+                                        istantly by Simply adding the dark class to
+                                        the body.</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="media p-3">
+
+                                <div class="media-body">
+                                    <h6 style="font-size: 13px; "><img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Emojione_1F499.svg/1024px-Emojione_1F499.svg.png"
+                                            alt="John Doe" style="width:25px;"> BOXED & WIDE LAYOUTS</h6>
+                                    <p style="font-size: 11px; " class="text-muted ">Strech your website to the Full
+                                        Width or make it boxedto suprise your visitors.
+                                    </p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="media p-3">
+
+                                <div class="media-body">
+                                    <h6 style="font-size: 13px;"><img
+                                            src="https://www.ltcompany.com/media/uploads/down.png" alt="John Doe"
+                                            style="width:25px;"> EXTENSIVE DOCUMENTATION</h6>
+                                    <p style="font-size: 11px; " class="text-muted ">We have covered each & every thing
+                                        in our Documentation including Videos &
+                                        Screenshots.</p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container text-center">
+        <h3>SOME OF OUR <span class="text-info">FEATURES </span> WORKS</h3>
+        <p class="text-muted" style="font-size: 18px;">We Have worked on some Awesome Project that are worth boasting
+            of.</p>
+        <span class="p-0 m-0 text-muted" style='font-size:30px;'>&#8212;</span>
+        <br>
+        <br>
+
+        <div class="card-group  mx-auto" style="width: 75%;">
+            <div class="card border-0" style="width:400px">
+                <img class="card-img-top"
+                    src="https://www.wallpaperflare.com/static/818/646/447/hiker-backpacker-backpacking-travelling-wallpaper.jpg"
+                    alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h6 class="card-title float-left">Backpack Contents</h6>
+                    <p class="card-text text-muted float-left" style="font-size: 13px;">UI Elemnts, Icons</p>
+
+                </div>
+            </div>
+            <div class="card border-0" style="width:400px">
+                <img class="card-img-top"
+                    src="https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2019/01/guillermo-sanchez-529739-unsplash.jpg?fit=1500%2C1001&ssl=1"
+                    alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h6 class="card-title float-left">Sunset Bulb Glow</h6>
+                    <p class="card-text text-muted float-left" style="font-size: 13px;">Graphics</p>
+
+                </div>
+            </div>
+            <div class="card border-0" style="width:400px">
+                <img class="card-img-top"
+                    src="https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c3R1ZHklMjB0YWJsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                    style="width:100%">
+                <div class="card-body">
+                    <h6 class="card-title float-left">Study Table</h6>
+                    <p class="card-text text-muted float-left" style="font-size: 13px;">Graphics, Media</p>
+
+                </div>
+            </div>
+            <div class="card border-0" style="width:400px">
+                <img class="card-img-top"
+                    src="https://storage.myseldon.com/news_pict_F8/F893C6FB2FA9EE9E74B08D40429F74E1" alt="Card image"
+                    style="width:100%">
+                <div class="card-body">
+                    <h6 class="card-title float-left">Workspace Stuff</h6>
+                    <p class="card-text text-muted float-left" style="font-size: 13px;">Media, Icons</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid bg-light">
+        <div class="container text-center">
+            <h3>TESTIMONIALS</h3>
+            <p class="text-muted" style="font-size: 18px;">Check out some of our Client Reviews.</p>
+            <span class="p-0 m-0 text-muted" style='font-size:30px;'>&#8212;</span>
+            <div class="container">
+                <table class="table table-borderless m-auto" style="width: 75%;">
+                    <tbody>
+                        <tr>
+                            <td class="p-0">
+                                <div class="media border-bottom border-right">
+                                    <img src="http://www.paylokma.com/images/female4.png"
+                                        class="align-self-start mr-3 rounded-circle" style="width:50px">
+                                    <div class="media-body mb-3">
+
+                                        <p class=" card-text text-left text-secondary" style="font-size: 12px;">"Lorem
+                                            ipsum dolor sit amet,
+                                            consectetur adipiscing
+                                            elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua."</p>
+                                        <h6 class="card-title float-left mb-1" style="font-size: 13px;">- SARA
+                                            NASIR<br><small class=" text-muted float-left ml-2">XYZ
+                                                Inc.</small>
+                                        </h6>
+                                        <br>
+
+
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="p-0">
+                                <div class="media border-bottom border-right">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzyIcdc6z3nviY8VNp91JI1f_tykrMHKDlzQHVjUpC7Mj5IPyMmGzDSXpJ47T4hrcbm-Q&usqp=CAU"
+                                        class="align-self-start mr-3 rounded-circle" style="width:50px">
+                                    <div class="media-body mb-3">
+
+                                        <p class=" card-text text-left text-secondary" style="font-size: 12px;">"Lorem
+                                            ipsum dolor sit amet,
+                                            consectetur adipiscing
+                                            elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua."</p>
+                                        <h6 class="  card-title float-left mb-1" style="font-size: 13px;">- LEEN
+                                            ZEK<br><small class=" text-muted float-left ml-2">XYZ
+                                                Inc.</small>
+                                        </h6>
+                                        <br>
+
+
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="p-0">
+                                <div class="media border-bottom">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYxPiX4PUiheHrhM2n--wMVBZqOU3G5paVk6-rgNNOxqT4uSA1Lk36M7kQOzP9jmpHtK0&usqp=CAU"
+                                        class="align-self-start mr-3 rounded-circle" style="width:50px">
+                                    <div class="media-body mb-3">
+
+                                        <p class=" card-text text-left text-secondary" style="font-size: 12px;">"Lorem
+                                            ipsum dolor sit amet,
+                                            consectetur adipiscing
+                                            elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua."</p>
+                                        <h6 class="  card-title float-left mb-1" style="font-size: 13px;">- NADIA
+                                            ALAHMAD<br><small class=" text-muted float-left ml-2">XYZ
+                                                Inc.</small></h6>
+                                        <br>
+
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="p-0">
+                                <div class="media border-right mt-2" style="font-size: 13px;">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd5KqiP_7htmin1ZO_xz4J9ZGEFums_SeuuuqQbqce4n4KAND-etj0j4opK_2TSPhdNIQ&usqp=CAU"
+                                        class="align-self-start mr-3 rounded-circle" style="width:50px">
+                                    <div class="media-body mt-2">
+
+                                        <p class=" card-text text-left text-secondary" style="font-size: 12px;">"Lorem
+                                            ipsum dolor sit amet,
+                                            consectetur adipiscing
+                                            elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua."</p>
+                                        <h6 class="  card-title float-left mb-1" style="font-size: 13px;">- SARA
+                                            NOOR<br><small class=" text-muted float-left ml-2">XYZ
+                                                Inc.</small></h6>
+                                        <br>
+
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="p-0">
+                                <div class="media border-right mt-2 ml-2">
+                                    <img src="https://cdn1.vectorstock.com/i/1000x1000/87/40/woman-female-girl-head-person-icon-graphic-vector-10248740.jpg"
+                                        class="align-self-start mr-3 rounded-circle" style="width:35px">
+                                    <div class="media-body mt-2">
+
+                                        <p class=" card-text text-left text-secondary" style="font-size: 12px;">"Lorem
+                                            ipsum dolor sit amet,
+                                            consectetur adipiscing
+                                            elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua."</p>
+                                        <h6 class="  card-title float-left mb-1" style="font-size: 13px;">- MRIA
+                                            JOHN<br><small class=" text-muted float-left ml-2">XYZ
+                                                Inc.</small>
+                                        </h6>
+                                        <br>
+
+
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="p-0">
+                                <div class="media mt-2 ml-2">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl7cLpeXfzWnrVoTAdVEhhfaICm6SeIxHulAJMCOTbXEuVwtLA-mWjrPb0j3tz3uVm4C8&usqp=CAU"
+                                        class="align-self-start mr-3 rounded-circle" style="width:35px">
+                                    <div class="media-body mt-2">
+
+                                        <p class=" card-text text-left text-secondary" style="font-size: 12px;">"Lorem
+                                            ipsum dolor sit amet,
+                                            consectetur adipiscing
+                                            elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua."</p>
+                                        <h6 class="  card-title float-left mb-1" style="font-size: 13px;">- MARY
+                                            JANE<br><small class=" text-muted float-left ml-2">XYZ
+                                                Inc.</small>
+
+                                        </h6>
+
+
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br> <br>
+
+    </div>
+    <div class="container mr-5 m-auto" style="width:65%;">
+        <img src="https://www.seekpng.com/png/detail/141-1418857_vintage-logo-template-png.png" class="rounded"
+            alt="Cinque Terre" width="17%" style="opacity: 0.5;">
+        <img src="https://www.eliwell.com/theme/eliwell_c4.2/images/clients/6.png" class="rounded" alt="Cinque Terre"
+            width="15%">
+        <img src="https://www.eliwell.com/theme/eliwell_c4.2/images/clients/7.png" class="rounded" alt="Cinque Terre"
+            width="15%">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-3onyv0E7vMXQyYJQJhdbVGSn6XAE_dRVjTIfIoGOzRjSW6_cYJudM3P875BGaU6IGro&usqp=CAU.png"
+            class="rounded" alt="Cinque Terre" width="15%">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU-8v1RHZXZWTEJrDCyuJwhPFRcvN5t1S6P4c91FdvQzRz9g3-Th7tV7K0OWBVXXtdRVQ&usqp=CAU.png"
+            class="rounded" alt="Cinque Terre" width="15%">
+        <img src="https://lh3.googleusercontent.com/proxy/YDZXXwj0FDGrOMw__-hj2oGRB1bhrSQ5zvAWrb4CCuglpNucEpJnU8tb2cZLLNlqaiFPHU0CUKGavrKxPoA_cfbwoyGpBnFcvXda4rShANzR5U2_HxfCEs3JTJOJnZ-YnvU"
+            class="rounded" alt="Cinque Terre" width="15%" style="opacity: 0.5;">
+    </div>
+    <br>
+    <div class="jumbotron jumbotron-fluid bg-info m-0 p-2" style="opacity: 0.8;">
+        <div class="container pt-3 d-flex p-3 justify-content-center">
+            <p class="text-center text-white" style="font-size: 20px;">Canvas comes with Unlimited Custimizations &
+                Options.
+            <div class="dropdown dropright">
+                <button style="opacity: 0.8;" type="button "
+                    class="btn btn-lg btn-primary btn-outline-info dropdown-toggle bg-info text-white pl-1 pt-0"
+                    data-toggle="dropdown">
+                    <b>Check Out</b>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                </div>
+            </div>
+            </p>
+        </div>
+    </div>
+
+    <footer class=" bg-dark text-white-50 pt-5   ">
+        <div class="footer-container d-flex justify-content-center pb-5">
+            <div class="footer-column1 ">
+
+                <div>
+                    <div>
+                        <p><b style="font-size: 30px;">canvas</b></p>
+
+                        <p style="font-size: 12px;">We believe in Simple,Creative &<br>
+                            Flexible Design Standarts</p>
+
+                    </div>
+
+                    <div style="font-size: 12px;">
+
+                        <p><b>Headquarters:</b><br>759 Folsom Ave, Suite 600<br>San Fransisco, CA 941076</p>
+
+                        <p><b>Phone:</b> (91) 8547 632521<br><b>Fax:</b> (91) 11 4752
+                            1433<br><b>Email:</b> info@canvas.com</p>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-column2 pt-2 pl-5 ">
+                <ul style="list-style-type: none;" class="">
+                    <h6 class="footer-column-heading pb-2">BLOGROLL</h6>
+                    <li style="font-size: 12px;" class="pb-1 pt-2"><span>&#8827;</span> Documentation</li>
+                    <li style="font-size: 12px;" class="pb-1"><span>&#8827;</span> Feedback</li>
+                    <li style="font-size: 12px;" class="pb-1"><span>&#8827;</span> Plugins</li>
+                    <li style="font-size: 12px;" class="pb-1"><span>&#8827;</span> Support Forums</li>
+                    <li style="font-size: 12px;" class="pb-1"><span>&#8827;</span> Themes</li>
+                    <li style="font-size: 12px;" class="pb-1"><span>&#8827;</span> WordPress Blog</li>
+                    <li style="font-size: 12px;" class="pb-1"><span>&#8827;</span> WordPress Planet</li>
+                </ul>
+            </div>
+            <div class="footer-column3 pt-2 pl-5 pr-0">
+                <h6>RECENT POSTS</h6>
+                <div>
+                    <p style="font-size: 13px;" class="pt-2 pb-2 border-bottom border-secondary">Lorem, ipsum dolor
+                        sit
+                        amet<br>consectetur<br><time style="font-size: 11px;"><i>10th July
+                                2014</i></time></p>
+
+
+                    <p style="font-size: 13px;" class="pt-2 pb-2 border-bottom border-secondary ">Elit
+                        Assumenda vel
+                        amet dolurum<br>quasi<br><time style="font-size: 11px;"><i>10th July 2014</i></time></p>
+
+                    <p style="font-size: 13px; ">Debities nihil placeate, ilium est nisi<br><time
+                            style="font-size: 11px;"><i>10th July 2014</i></time></p>
+
+                </div>
+            </div>
+            <div class="footer-column4 pt-2 pl-5 pr-0">
+                <div class="d-flex ">
+                    <div class="mr-5">
+                        <h5>15.065.421</h5>
+                        <p style="font-size: 10px; ">TOTAL DOWNLOADS</p>
+                    </div>
+                    <div>
+                        <h5>18,465</h5>
+                        <p style="font-size: 10px; ">CLIENTS</p>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <p style="font-size: 13px; ">Sunscribe to Our Newsletter to get Important News,<br>Amazing
+                        Offers & Inside Scoops: </p>
+                </div>
+                <div>
+                    <form class="form-inline">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-dark border-secondary"><i class="bi bi-cursor"></i><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="20" height="16" color="white"
+                                        fill="white" class="bi bi-cursor" viewBox="0 0 16 16">
+                                        <path
+                                            d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52 2.25 8.184z" />
+                                    </svg></span>
+                            </div>
+                            <input type="email" class="form-control bg-dark border-secondary"
+                                placeholder="Enter your Email">
+                            <button class="btn btn-success input-group-append" type="submit">Search</button>
+                        </div>
+                    </form>
+                </div>
+                <br>
+                <div>
+                    <form class="form-inline">
+                        <div class="input-group mr-5">
+                            <div>
+
+                                <div><img style="width:30px;" class="mr-2"
+                                        src="https://icon-library.com/images/facebook-icon-white-logo-png-transparent_22008.png">
+                                </div>
+
+                            </div>
+                            <p style="font-size: 11px;">Like us<br>on Facebook</p>
+                        </div>
+                        <div class="input-group">
+                            <div>
+
+                                <div><img style="width:30px;" class="mr-2"
+                                        src="https://w7.pngwing.com/pngs/237/540/png-transparent-rss-web-feed-computer-icons-news-aggregator-blog-subscribe-miscellaneous-angle-text.png">
+                                </div>
+
+                            </div>
+                            <p style="font-size: 11px;">Subscribe<br>to RSS feeds</p>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-lg-fluid pb-5 pt-5 d-flex justify-content-between " style="background: #444;">
+            <p class="pl-5 pt- ">Copyrights © 2014 All Right Reserved by Canvac Inc.<br><abbr title="">Terms of Use
+                </abbr>/<abbr title="">
+                    Privancy
+                    Policy</abbr></p>
+
+            <div class="footer-bottom  ">
+                <div class="container ">
+                    <div class="row justify-content-end mr-5">
+                        <div class="col-md-6 footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-yahoo"></i></a>
+                            <a href="#"><i class="fab fa-vimeo"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end mr-5 mt-2">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                            </svg> info@canvas.com . <i class="fa fa-headphones" aria-hidden="true"></i>
+                            +91-11-6541-6369
+                            . <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-skype" viewBox="0 0 16 16">
+                                <path
+                                    d="M4.671 0c.88 0 1.733.247 2.468.702a7.423 7.423 0 0 1 6.02 2.118 7.372 7.372 0 0 1 2.167 5.215c0 .344-.024.687-.072 1.026a4.662 4.662 0 0 1 .6 2.281 4.645 4.645 0 0 1-1.37 3.294A4.673 4.673 0 0 1 11.18 16c-.84 0-1.658-.226-2.37-.644a7.423 7.423 0 0 1-6.114-2.107A7.374 7.374 0 0 1 .529 8.035c0-.363.026-.724.08-1.081a4.644 4.644 0 0 1 .76-5.59A4.68 4.68 0 0 1 4.67 0zm.447 7.01c.18.309.43.572.729.769a7.07 7.07 0 0 0 1.257.653c.492.205.873.38 1.145.523.229.112.437.264.615.448.135.142.21.331.21.528a.872.872 0 0 1-.335.723c-.291.196-.64.289-.99.264a2.618 2.618 0 0 1-1.048-.206 11.44 11.44 0 0 1-.532-.253 1.284 1.284 0 0 0-.587-.15.717.717 0 0 0-.501.176.63.63 0 0 0-.195.491.796.796 0 0 0 .148.482 1.2 1.2 0 0 0 .456.354 5.113 5.113 0 0 0 2.212.419 4.554 4.554 0 0 0 1.624-.265 2.296 2.296 0 0 0 1.08-.801c.267-.39.402-.855.386-1.327a2.09 2.09 0 0 0-.279-1.101 2.53 2.53 0 0 0-.772-.792A7.198 7.198 0 0 0 8.486 7.3a1.05 1.05 0 0 0-.145-.058 18.182 18.182 0 0 1-1.013-.447 1.827 1.827 0 0 1-.54-.387.727.727 0 0 1-.2-.508.805.805 0 0 1 .385-.723 1.76 1.76 0 0 1 .968-.247c.26-.003.52.03.772.096.274.079.542.177.802.293.105.049.22.075.336.076a.6.6 0 0 0 .453-.19.69.69 0 0 0 .18-.496.717.717 0 0 0-.17-.476 1.374 1.374 0 0 0-.556-.354 3.69 3.69 0 0 0-.708-.183 5.963 5.963 0 0 0-1.022-.078 4.53 4.53 0 0 0-1.536.258 2.71 2.71 0 0 0-1.174.784 1.91 1.91 0 0 0-.45 1.287c-.01.37.076.736.25 1.063z" />
+                            </svg> CanvasOnSkype</p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>
